@@ -33,8 +33,11 @@ import {
 import ReactNativeBiometrics from 'react-native-biometrics'
 let keys;
 
+//Cela signifie que la constante App est de type fonction et qu'elle renvoie Node.
 const App: () => Node = () => {
 
+//Les parties de codes spécifiant dark servent à permettre de changer l'apparence de
+//l'application en sombre
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
